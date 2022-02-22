@@ -1,7 +1,6 @@
 class Recipe {
   String label;
   String imageUrl;
-  // TODO: Add serving and ingredients here
 
   Recipe(this.label, this.imageUrl);
 

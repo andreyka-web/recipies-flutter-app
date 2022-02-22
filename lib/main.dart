@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'recipe.dart';
 
@@ -56,13 +54,13 @@ class _MyHomePageState extends State<MyHomePage> {
             itemCount: Recipe.samples.length,
             itemBuilder: (BuildContext context, int index) {
               return GestureDetector(
-                onTap: (){
+                onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder:(context) {
+                      builder: (context) {
                         return Text('Detailed Page');
-                      }
+                      },
                     ),
                   );
                 },
