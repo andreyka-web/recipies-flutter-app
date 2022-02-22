@@ -1,3 +1,4 @@
+import 'recipe_detail.dart';
 import 'package:flutter/material.dart';
 import 'recipe.dart';
 
@@ -59,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     context,
                     MaterialPageRoute(
                       builder: (context) {
-                        return Text('Detailed Page');
+                        return RecipeDetail(recipe: Recipe.samples[index]);
                       },
                     ),
                   );
